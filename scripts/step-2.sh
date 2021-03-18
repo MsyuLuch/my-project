@@ -8,11 +8,11 @@ sayWait()
    echo "" 1>&2
 }
 
-HOME_DIR="/root/exp"
+HOME_DIR="/root"
 BACKUP_DIR="/var/backup/mysql"
-IP_MASTER="185.177.93.9"
-BIN_LOG="binlog.000005"
-POS_LOG="688350"
+IP_MASTER="185.177.92.60"
+BIN_LOG="binlog.000002"
+POS_LOG="915"
 
 # Only root can execute this script
 USER_ID="$(id -u)"
@@ -20,13 +20,6 @@ if [[ ${USER_ID} -ne 0 ]]; then
     echo  "Only root can execute this script."
     exit 1
 fi
-
-############## GIT ###########################
-
-cd $HOME_DIR
-git clone https://github.com/MsyuLuch/my-project.git
-
-sayWait
 
 ############## MYSQL ###########################
 echo "установливаем mysql"
