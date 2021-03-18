@@ -39,7 +39,7 @@ sayWait
 yum install logstash
 
 cp -rvi $HOME_DIR/my-project/logstash/* /etc/logstash/
-cp -vi $HOME_DIR/GeoLite2-City_20210316.tar.gz /etc/logstash/
+cp -vi $HOME_DIR/GeoLite2-City.mmdb /etc/logstash/
 
 systemctl enable logstash.service && systemctl start logstash.service && systemctl status logstash.service
 
