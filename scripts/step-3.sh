@@ -8,7 +8,7 @@ sayWait()
    echo "" 1>&2
 }
 
-HOME_DIR="/root/exp"
+HOME_DIR="/root"
 
 # Only root can execute this script
 USER_ID="$(id -u)"
