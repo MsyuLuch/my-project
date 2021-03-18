@@ -46,7 +46,7 @@ mysql --force < $HOME_DIR/my-project/dump-data.sql
 mysql -e "show databases;"
 sayWait
 
-mysql -e "CHANGE MASTER TO MASTER_HOST='$IP_MASTER', MASTER_USER='repl', MASTER_PASSWORD='oTUSlave#2020', MASTER_LOG_FILE='$BIN_LOG', MASTER_LOG_POS=$POS_LOG"
+mysql -e "CHANGE MASTER TO MASTER_HOST='$IP_MASTER', MASTER_USER='repl', MASTER_PASSWORD='oTUSlave#2020', MASTER_LOG_FILE='$BIN_LOG', MASTER_LOG_POS=$POS_LOG", GET_MASTER_PUBLIC_KEY = 1
 mysql -e "START SLAVE;"
 mysql -e "show slave status\G"
 
