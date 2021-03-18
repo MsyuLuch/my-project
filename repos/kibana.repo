@@ -1,3 +1,4 @@
+[kibana-7.x]
 name=Kibana repository for 7.x packages
 baseurl=https://artifacts.elastic.co/packages/7.x/yum
 gpgcheck=1
