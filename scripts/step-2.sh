@@ -42,7 +42,7 @@ cp  $HOME_DIR/my-project/mysql/.my.cnf /root/
 service mysqld restart && systemctl status mysqld
 sayWait
 
-mysql < $HOME_DIR/my-project/scripts/dump-data.sql
+mysql --force < $HOME_DIR/my-project/dump-data.sql
 mysql -e "show databases;"
 sayWait
 
