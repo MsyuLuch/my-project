@@ -8,8 +8,8 @@ sayWait()
    echo "" 1>&2
 }
 
-HOME_DIR="/root/exp"
-IP_REPL="185.177.93.68"
+HOME_DIR="/root"
+IP_REPL="185.177.92.245"
 
 # Only root can execute this script
 USER_ID="$(id -u)"
@@ -17,12 +17,6 @@ if [[ ${USER_ID} -ne 0 ]]; then
     echo  "Only root can execute this script."
     exit 1
 fi
-
-############## GIT ###########################
-cd $HOME_DIR
-git clone https://github.com/MsyuLuch/my-project.git
-
-sayWait
 
 ############## APACHE & PHP ###########################
 echo "устанавливаем apache, php"
@@ -63,6 +57,7 @@ mysql -e "create database wordpress"
 mysql -e "show databases"
 sayWait
 
+cd $HOME_DIR/my-project
 mysqldump --all-databases --no-create-info > dump-data.sql
 mysql -e "SHOW MASTER STATUS"
 sayWait
