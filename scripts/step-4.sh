@@ -26,18 +26,11 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 cp -vi $HOME_DIR/my-project/repos/* /etc/yum.repos.d/
 
-yum install --enablerepo=elasticsearch elasticsearch
-
-systemctl daemon-reload && systemctl enable elasticsearch.service && systemctl start elasticsearch.service && systemctl status elasticsearch.service
-
-sayWait
-
-curl 127.0.0.1:9200
-
-# Копируем публичный ключ репозитория:
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 yum install kibana
+
+cp -vi $HOME_DIR/my-project/kibana/* /etc/kibana/
 
 systemctl daemon-reload && systemctl enable kibana.service && systemctl start kibana.service && systemctl status kibana.service
 
@@ -46,6 +39,7 @@ sayWait
 yum install logstash
 
 cp -vi $HOME_DIR/my-project/logstash/ /etc/logstash/
+cp -vi $HOME_DIR/GeoLite2-City_20210316.tar.gz /etc/logstash/
 
 systemctl enable logstash.service && systemctl start logstash.service && systemctl status logstash.service
 
