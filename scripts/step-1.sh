@@ -9,7 +9,7 @@ sayWait()
 }
 
 HOME_DIR="/root"
-IP_REPL="185.177.93.199"
+IP_REPL="185.177.93.227"
 
 # Only root can execute this script
 USER_ID="$(id -u)"
