@@ -17,7 +17,7 @@ ____
   + $IP_REPL (ip адрес сервера с ролью SLAVE)
  
 my-project/scripts:
--step-1.sh - установка Nginx, Apache, MySql-Server (Master), CMS Wordpress
--step-2.sh - установка MySql-Server (Slave)
--step-3.sh - установка Prometheus, Node-exporter, Grafana
--step-4.sh - установка ELK Stack: Elasticsearch, Logstash, Kibana
+- step-1.sh - установка Nginx, Apache, MySql-Server (Master), CMS Wordpress
+- step-2.sh - установка MySql-Server (Slave)
+- step-3.sh - установка Prometheus, Node-exporter, Grafana
+- step-4.sh - установка ELK Stack: Elasticsearch, Logstash, Kibana
