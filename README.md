@@ -29,7 +29,7 @@ ___________
 - выполняем скрипт step-3.sh (начальные параметры, должны быть отредектированы вручную: $HOME_DIR).
 - выполняем скрипт step-4.sh (начальные параметры, должны быть отредектированы вручную: $HOME_DIR).
 
-CMS доступна по ссылке http://IP_MASTER
-Prometheus - http://IP_MASTER:9090
-Grafana - http://IP_MASTER:3000
-Kibana - http://IP_MASTER:5601
+- CMS доступна по ссылке http://IP_MASTER
+- Prometheus - http://IP_MASTER:9090
+- Grafana - http://IP_MASTER:3000
+- Kibana - http://IP_MASTER:5601
