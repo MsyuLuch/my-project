@@ -10,11 +10,12 @@ ____
 - запуск скриптов только от пользователя root
 - установлен wget
 - SELINUX=disabled (настройка SELINUX в скриптах не предусмотрена)
-- для настройки geoip фильтра в $HOME_DIR должна быть база данных GeoLite2-City.mmdb (скачать можно по ссылке https://dev.maxmind.com/geoip/geoip2/geolite2/#Download_Access)
 - в скриптах необходимо вручную отредактировать 
   + $HOME_DIR (директория, в которую скачан проект my-project) 
   + $IP_MASTER (ip адрес сервера с ролью MASTER) 
   + $IP_REPL (ip адрес сервера с ролью SLAVE)
+- в файле /mysql/.my.cnf прописан пароль пользователя root для mysql (необходимо ввести при установке mysql)
+- для настройки geoip фильтра в $HOME_DIR должна быть база данных GeoLite2-City.mmdb (скачать можно по ссылке https://dev.maxmind.com/geoip/geoip2/geolite2/#Download_Access)
  
 my-project/scripts:
 - step-1.sh - установка Nginx, Apache, MySql-Server (Master), CMS Wordpress
