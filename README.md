@@ -15,6 +15,7 @@ ____
   + $HOME_DIR (директория, в которую скачан проект my-project) 
   + $IP_MASTER (ip адрес сервера с ролью MASTER) 
   + $IP_REPL (ip адрес сервера с ролью SLAVE)
+ 
 my-project/scripts:
 -step-1.sh - установка Nginx, Apache, MySql-Server (Master), CMS Wordpress
 -step-2.sh - установка MySql-Server (Slave)
