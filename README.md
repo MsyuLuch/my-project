@@ -22,3 +22,14 @@ my-project/scripts:
 - step-2.sh - установка MySql-Server (Slave)
 - step-3.sh - установка Prometheus, Node-exporter, Grafana
 - step-4.sh - установка ELK Stack: Elasticsearch, Logstash, Kibana
+___________
+Установка:
+- выполняем скрипт step-1.sh на сервере с ролью Master (начальные параметры, должны быть отредектированы вручную $HOME_DIR, $IP_REPL)
+- выполняем скрипт step-2.sh (начальные параметры, должны быть отредектированы вручную: $HOME_DIR, $IP_MASTER, $BIN_LOG - bin-log, $POS_LOG - номер позиции, данные, выведенные на экран на последнем шаге выполнения step-1.sh). Файл дампа базы mysql, автоматически сформированный на предыдущем шаге необходимо перенести в $HOME_DIR на сервер с ролью Slave.
+- выполняем скрипт step-3.sh (начальные параметры, должны быть отредектированы вручную: $HOME_DIR).
+- выполняем скрипт step-4.sh (начальные параметры, должны быть отредектированы вручную: $HOME_DIR).
+
+CMS доступна по ссылке http://IP_MASTER
+Prometheus - http://IP_MASTER:9090
+Grafana - http://IP_MASTER:3000
+Kibana - http://IP_MASTER:5601
