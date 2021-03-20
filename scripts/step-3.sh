@@ -17,12 +17,6 @@ if [[ ${USER_ID} -ne 0 ]]; then
     exit 1
 fi
 
-
-############## WEB start ###########################
-
-systemctl start nginx && systemctl status nginx && systemctl enable nginx
-systemctl start httpd && systemctl status httpd && systemctl enable httpd
-
 ############## PROMETHEUS ###########################
 
 #создаем пользователя без домашней директории, без возможности логина
