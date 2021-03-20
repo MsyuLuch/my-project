@@ -9,7 +9,7 @@ sayWait()
 }
 
 HOME_DIR="/root"
-IP_REPL="185.177.93.116"
+IP_REPL="185.177.93.145"
 password="oTUSlave#2020"
 
 # Only root can execute this script
