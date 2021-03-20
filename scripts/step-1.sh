@@ -52,3 +52,7 @@ mysqldump --all-databases --no-create-info > dump-data.sql
 # выводим текущую информацию с master
 mysql -e "SHOW MASTER STATUS"
 sayWait
+############## WEB start ###########################
+systemctl start nginx && systemctl status nginx && systemctl enable nginx
+systemctl start httpd && systemctl status httpd && systemctl enable httpd
+sayWait
