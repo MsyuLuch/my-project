@@ -10,7 +10,7 @@ sayWait()
 
 HOME_DIR="/root"
 BACKUP_DIR="/var/backup/mysql"
-IP_MASTER="185.177.93.90"
+IP_MASTER="185.177.93.139"
 BIN_LOG="binlog.000002"
 POS_LOG="915"
 password="oTUSlave#2020"
